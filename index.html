@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A meme-infused portfolio showcasing Sigma Gyaat vibes, web development skills, and humor.">
+    <title>Sigma Gyaat Meme Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #ff7f50, #ff6347);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #1d2b36;
+            color: #f39c12;
+            padding: 60px 0;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        /* Portfolio Section */
+        section {
+            padding: 50px 20px;
+            background: #2c3e50;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        .portfolio-cards {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            background: #3498db;
+            color: #fff;
+        }
+
+        .card h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Collaboration Form */
+        .collaboration-form {
+            background: #e74c3c;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+
+        .collaboration-form h3 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .collaboration-form label {
+            display: block;
+            font-size: 1.2em;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .collaboration-form input,
+        .collaboration-form textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .collaboration-form button {
+            background: #f39c12;
+            color: #fff;
+            font-size: 1.3em;
+            padding: 12px 30px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .collaboration-form button:hover {
+            background: #e67e22;
+        }
+
+        /* Meme Section */
+        .memes-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .meme-card {
+            background: #e74c3c;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .meme-card:hover {
+            transform: scale(1.05);
+            background: #c0392b;
+        }
+
+        .meme-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .sigma {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            color: #8e44ad;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+
+        .meme-text {
+            font-size: 2.5em;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 30px;
+        }
+
+        /* Jokes Section */
+        .joke {
+            font-size: 1.5em;
+            color: #f39c12;
+            margin-top: 30px;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sigma Gyaat Portfolio</h1>
+    <p>Web Development, Memes, and Life Wisdom 💡</p>
+    <br/>
+    <p>I'M Prativa Dhar , a tech enthusiast created a funky portfolio and website with meme culture</p>
+</header>
+
+<section>
+    <h2 class="meme-text">Skills That Make Me a Meme Master</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Mastering the basics of the web, one div at a time!</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Making websites pretty and responsive. The design wizardry!</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Because static is overrated and dynamic is life!</p>
+        </div>
+        <div class="skill">
+            <h3>UI/UX</h3>
+            <p>Designing websites that even your grandma will love.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="meme-text">Portfolio: Where Code Meets Creativity</h2>
+    <div class="portfolio-cards">
+        <div class="card">
+            <img src="https://codingartistweb.com/wp-content/uploads/2022/09/Meme-App-01-1024x576.png" alt="Project 1">
+            <h3>HTML/CSS</h3>
+            <p>This is where I display my HTML and CSS superpowers. Check out the clean code and beautiful design!</p>
+        </div>
+        <div class="card">
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--O9_6O-Ca--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g2y60a6osx9eagi84cst.png" alt="Project 2">
+            <h3>Javascript</h3>
+            <p>Look at the dynamic functionality built with JavaScript. Pure magic happens here!</p>
+        </div>
+        <div class="card">
+            <img src="https://i.imgflip.com/73hzme.jpg" alt="Project 3">
+            <h3>UI/UX</h3>
+            <p>UI/UX perfection! This project makes user interaction as smooth as butter.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="meme-text">Collaboration: Let's Meme & Code Together!</h2>
+    <div class="collaboration-form">
+        <h3>Fill out the form below to join the meme squad</h3>
+        <form action="mailto:developer@memeporium.com" method="post" enctype="text/plain">
+            <label for="name">What's your name, meme legend?</label>
+            <input type="text" id="name" name="name" required placeholder="Your meme-tastic name">
+
+            <label for="email">How can I reach you to share memes?</label>
+            <input type="email" id="email" name="email" required placeholder="Your meme-mail address">
+
+            <label for="message">What's your meme strategy for collaboration?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me your ideas and memes!" required></textarea>
+
+            <button type="submit">Send Meme Request</button>
+        </form>
+    </div>
+</section>
+
+<section>
+    <h2 class="meme-text">Recent Memes That Define My Vibe</h2>
+    <div class="memes-container">
+        <div class="meme-card">
+            <p>When you write the code and it works on the first try!</p>
+            <img src="https://www.mememaker.net/static/images/memes/4802088.jpg" alt="Meme 1">
+        </div>
+        <div class="meme-card">
+            <p>When the client asks, "Can you make it more red?"</p>
+            <img src="https://i.imgflip.com/2i79fw.jpg" alt="Meme 2">
+        </div>
+        <div class="meme-card">
+            <p>When you're debugging and it finally works!</p>
+            <img src="https://i.imgflip.com/7lf5it.jpg" alt="Meme 3">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Sigma Gyaat Portfolio. All memes and rights reserved.</p>
+    <a href="mailto:developer@memeporium.com">Contact Me</a>
+    <H1>www.prativa_meme.com</H1>
+</footer>
+
+<div class="sigma">#SigmaGyaat</div>
+
+<div class="joke" >
+    <h2>did the developer go broke? Because they kept trying to fix their cache! 😆</h2> 
+</div>
+
+</body>
+</html>
